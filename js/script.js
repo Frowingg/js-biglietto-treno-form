@@ -16,12 +16,12 @@ generateButton.addEventListener('click',
 
         if (userAge === 'minorenne') {
             price -= (price/100*20).toFixed(2);
-            offer = 'Biglietto Scontanto del 20%'
+            offer = 'Biglietto Scontato del 20%';
 
         }
-        else if (userAge === 'over 65') {
+        else if (userAge === 'over-65') {
             price -= (price/100*40).toFixed(2);
-            offer = 'Biglietto Scontanto del 40%'
+            offer = 'Biglietto Scontato del 40%';
 
         }
         console.log(price);

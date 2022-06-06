@@ -9,6 +9,7 @@
     <title>Biglietto-form</title>
 </head>
 <body>
+    <!-- COUNT AREA -->
     <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
     <section id="ticket-count">
         <div class="user-form">
@@ -29,49 +30,69 @@
     
                         <div class="form-item">
                             <label for="user-age">Fascia d'età</label>
+                            <br>
                             <select id="user-age">
                                 <option value="maggiorenne">Maggiorenne</option>
                                 <option value="minorenne">Minorenne</option>
-                                <option value="over 65">Over 65</option>
+                                <option value="over-65">Over 65</option>
                             </select>
                         </div>
              
                 </div>
-                <div class="row row-cols-2"></div>
+                <div class="row row-cols-2">
+                    <div class="buttons-area">
                         <div class="form-item"> 
                             <button id="generate-button">Genera</button>
                         </div>
                         <div class="form-item">
                             <button id="delede-button">Annulla</button>
                         </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <hr>
+
+    <!-- YOUR TICKET AREA -->
     <h2>IL TUO BIGLIETTO</h2>
     <div class="ticket">
-        <h3>Dettaglio passegeri</h3>
-        <div class="ticket-name-area">
-            <span>NOME PASSEGGERO</span>
-            <span id="ticket-name"></span>
-        </div>
-        <div class="info-area">
-            <div class="offer-area">
-                <span>Offerta</span>
-                <span id="ticket-offer"></span>
+        <h5>DETTAGLI PASSEGGERI</h5>
+        <div class="row">
+            <div class="col">
+                <div class="ticket-area ticket-name-area">
+                    <span class="title">NOME PASSEGGERO</span>
+                    <span id="ticket-name"></span>
+                </div>
             </div>
-            <div class="vagon-area">
-                <span>Carrozza</span>
-                <span id="ticket-vagon"></span>
+            <div class="col">
+                <div class="info-area">
+                    <div class="ticket-area offer-area">
+                        <span class="title">Offerta</span>
+                        <br>
+                        <span class="ticket-user-info" id="ticket-offer"></span>
+                    </div>
+                </div>
             </div>
-            <div class="codice-cp-area">
-                <span>Codice CP</span>
-                <span id="ticket-cp"></span>
+            <div class="col">
+                <div class="ticket-area vagon-area">
+                    <span class="title">Carrozza</span>
+                    <br>
+                    <span class="ticket-user-info" id="ticket-vagon"></span>
+                </div>
             </div>
-            <div class="price-area">
-                <span>Costo biglietto</span>
-                <span id="ticket-price"></span>
+            <div class="col">
+                <div class="ticket-area codice-cp-area">
+                    <span class="title">Codice CP</span>
+                    <br>
+                    <span class="ticket-user-info" id="ticket-cp"></span>
+                </div>
+            </div>
+            <div class="col">    
+                <div class="ticket-area price-area">
+                    <span class="title">Costo biglietto</span>
+                    <br>
+                    <span class="ticket-user-info" id="ticket-price"></span>
+                </div>
             </div>
         </div>
     </div>

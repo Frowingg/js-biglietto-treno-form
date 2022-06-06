@@ -12,10 +12,55 @@ h2{
     margin: 0 auto;
     border-radius: 25px;
     padding: 25px 100px;
+    text-align: center;
 }
 label{
     color: #b91450;
 }
-.user-form{
-    
+.buttons-area{
+    margin: 50px auto 0;
+}
+.form-item{
+    display: inline;
+}
+#generate-button, #delede-button{
+    margin: 0 10px;
+    color: #b91450;
+    border: 1.5px solid #b91450;
+    border-radius: 3px;
+}
+input{
+    border-radius: 5px;
+    border-color: #b91450;
+    border-width: 1.5px;
+
+}
+select{
+    border-radius: 5px;
+    border-color: #b91450;
+    background-color: white;
+    border-width: 1.5px;
+}
+/* TICKET */
+.ticket{
+    background-color: white;
+    margin: 0 auto;
+    width: 75%;
+    padding: 20px;
+}
+
+.title{
+    font-weight: 900;
+}
+.ticket-name-area{
+    background-color: gray;
+    padding: 10px;
+}
+.ticket-area{
+    min-height: 130px;
+    position: relative;
+}
+.ticket-user-info{
+    position: absolute;
+    bottom: 20px;
 }
