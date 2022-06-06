@@ -9,13 +9,39 @@ generateButton.addEventListener('click',
         const userAge = document.getElementById('user-age').value;
         console.log(userAge)
 
-        price = 0.21 * userKm
+        price = (0.21 * userKm).toFixed(2)
+        console.log(price);
+
+        let offer = 'Biglietto Standard'
+
         if (userAge === 'minorenne') {
-            price -= (price/100*20);
+            price -= (price/100*20).toFixed(2);
+            offer = 'Biglietto Scontanto del 20%'
+
         }
         else if (userAge === 'over 65') {
-            price -= (price/100*40);
+            price -= (price/100*40).toFixed(2);
+            offer = 'Biglietto Scontanto del 40%'
+
         }
         console.log(price);
+        console.log(offer)
+
+        document.getElementById('ticket-name').innerHTML = userName
+        document.getElementById('ticket-offer').innerHTML = offer
+        document.getElementById('ticket-vagon').innerHTML = Math.floor((Math.random() * 9) + 1);
+        document.getElementById('ticket-cp').innerHTML = Math.floor((Math.random() * 9999) + 1);
+        document.getElementById('ticket-price').innerHTML = `${price} €`
+    }
+)
+const deledeButton = document.getElementById('delede-button')
+deledeButton.addEventListener('click',
+    function() {
+        
+        document.getElementById('ticket-name').value = '';
+        document.getElementById('ticket-offer').value = '';
+        document.getElementById('ticket-vagon').value = '';
+        document.getElementById('ticket-cp').value = '';
+        document.getElementById('ticket-price').value = '';
     }
 )
