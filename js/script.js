@@ -36,12 +36,9 @@ generateButton.addEventListener('click',
 )
 const deledeButton = document.getElementById('delede-button')
 deledeButton.addEventListener('click',
-    function() {
-        
-        document.getElementById('ticket-name').value = '';
-        document.getElementById('ticket-offer').value = '';
-        document.getElementById('ticket-vagon').value = '';
-        document.getElementById('ticket-cp').value = '';
-        document.getElementById('ticket-price').value = '';
+    function() {       
+        document.getElementById('user-name').value = ' ';
+        document.getElementById('user-km').value = ' ';
+        document.getElementById('user-age').value = ' ';
     }
 )
